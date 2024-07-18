@@ -1,0 +1,80 @@
+@media screen and (max-width: 576px) {
+    main > section {
+        margin-top: 100px;
+    }
+    .navbar, 
+    .nav_links,
+    .teams,
+    .feature
+    {
+        flex-direction: column;
+    }
+    .team_img,
+    .fact_container,
+    .sponsor_company
+    {
+        grid-template-columns: 1fr;
+    }
+    .fact_container
+    {
+        justify-items: center;
+        gap: 24px;
+    }
+    .sponsor_company{
+        justify-items: center;
+        gap: 50px;
+    }
+    .our_feature{
+        margin-left: 20px;
+    }
+    .feature {
+        gap: 65px;
+    }
+    #batch{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+/* medium size device  */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams, .feature
+    {
+        flex-direction: column;
+    }
+    .our_feature{
+        margin-left: 50px auto;
+    }
+    .team_img,
+    .sponsor_company,
+    .fact_container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    #batch{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
+/* large size device  */
+@media screen and (min-width:993px) and (max-width:1200px){
+    .teams, .feature
+    {
+        flex-direction: column;
+    }
+    .our_feature {
+        margin-left: 70px auto;
+    }
+    .sponsor_company,
+    .fact_container
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        justify-items: center;
+    }
+    #batch{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
